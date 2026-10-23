@@ -1,0 +1,48 @@
+nav{
+   border: 1px solid #040404;
+}
+
+nav ul{
+   height: 50px;
+   list-style: none;
+   display: flex;
+   justify-content: center;
+   justify-content: space-around;
+   align-items: center;
+   margin: 4px 40px;
+}
+
+nav ul a{
+      text-decoration: none;
+}
+
+nav ul a li#defaultButton{
+   font-family: "Plus Jakarta Sans", sans-serif;
+   font-size: 20px;
+   color: black;
+}
+
+nav ul a li#navbarTitle{
+   font-family: "Plus Jakarta Sans", sans-serif;
+   font-size: 20px;
+   font-weight: bold;
+   color: #2F80ED;
+}
+
+nav ul a li#search input#searchInput{
+   font-family: "Plus Jakarta Sans", sans-serif;
+   font-size: 20px;
+   width: 525px;
+   height: 35px;
+   color: black;
+}
+
+nav ul a li#loginSignUpButton{
+   background-color: #0066FF;
+   padding: 5px;
+   border-radius: 10px;
+   font-family: "Plus Jakarta Sans", sans-serif;
+   font-size: 20px;
+   color: white;
+   font-size: 20px;
+}
