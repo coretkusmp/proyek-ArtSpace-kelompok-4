@@ -49,7 +49,8 @@
 }
 
 .title-and-form form .form-footer{
-   
+   display: flex;
+   flex-direction: column;
 }
 
 .title-and-form form .form-footer a{
