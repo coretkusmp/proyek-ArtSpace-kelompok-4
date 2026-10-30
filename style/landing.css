@@ -1,4 +1,40 @@
-body{
-   background-image: url("/Pictures/bgPhoto.png");
-   background-size: 1100px;
+@import url(variable-warna.css);
+
+.title-and-button{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
+
+.title-and-button{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.title-and-button h1{
+   font-family: 'Inter';font-size: 22px;
+   font-size: 96px;
+}
+
+.title-and-button span{
+   display: flex;
+   gap: 5vw;
+}
+
+.title-and-button span button{
+   cursor: pointer;
+   border: none;
+   opacity: 60%;
+   color: white;
+   font-family: 'Inter';font-size: 20px; font-weight: bold;
+   background-color: var(--button-blue);
+   border-radius: 20px;
+   padding: 2vh 5vw;
+}
+
+.title-and-button span button:hover{
+   opacity: 90%;
+   transition-duration: 300ms;
+}
+
