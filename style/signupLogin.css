@@ -34,6 +34,7 @@
 }
 
 .title-and-form form .form-header .email-password-input{
+   font-family: 'Inter';
    width: 40vw;
    height: 15vh;
    display: flex;
@@ -41,6 +42,8 @@
 }
 
 .title-and-form form .form-header .email-password-input input{
+   font-family: 'Inter';
+   font-size: 18px;
    height: 6vh;
    border-radius: 15px;
    background-color: var(--biru-muda-pucat);
@@ -49,17 +52,56 @@
 }
 
 .title-and-form form .form-footer{
-   display: flex;
-   flex-direction: column;
+
+
 }
 
 .title-and-form form .form-footer a{
-   background-color: var(--button-blue);
-   color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-decoration: none;
+
 }
 
 .title-and-form form .form-footer a button{
    background-color: var(--button-blue);
    color: white;
    border: 1px solid black;
+   width: 40vw;
+   height: 6vh;
+   border-radius: 15px;
+}
+
+.title-and-form form .form-footer .auth{
+   display: flex;
+   gap: 3vw;
+}
+
+.title-and-form form .form-footer .auth span{
+   display: flex;
+   margin: 0px 12vh;
+   gap: 5px;
+}
+
+.title-and-form form .form-footer .auth span p{
+   font-family: 'Inter';
+}
+
+.title-and-form form .form-footer .auth span a{
+   font-family: 'Inter';
+   color: blue;
+}
+
+.title-and-form form .form-footer .auth span a:hover{
+   text-decoration: underline;
+}
+
+.title-and-form form .form-footer .auth a.forgot{
+   font-family: 'Inter';
+   color: blue;
+}
+
+.title-and-form form .form-footer .auth a.forgot:hover{
+   text-decoration: underline;
 }
