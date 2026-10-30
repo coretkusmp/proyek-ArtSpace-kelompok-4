@@ -1,7 +1,7 @@
 <nav>
       
    <ul>
-      <a href="index.php">
+      <a href="/index.php">
          <li id="navbarTitle">
             ArtSpace
          </li>
