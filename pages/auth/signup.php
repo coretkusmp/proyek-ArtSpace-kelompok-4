@@ -14,7 +14,7 @@
    <!-- font -->
 
    <link rel="stylesheet" href="/style/base.css">
-   <link rel="stylesheet" href="/style/signup.css">
+   <link rel="stylesheet" href="/style/signupLogin.css">
    <link rel="stylesheet" href="/style/navbar.css">
 
 </head>
@@ -38,9 +38,14 @@
          </div>
 
          <div class="form-footer">
-               <a href="">
-                  <button>Sign Up</button>
-               </a>
+            <a href="">
+               <button>Sign Up</button>
+            </a>
+            <div class="auth">
+               <span>
+                  <p>Already have account?</p><a href="login.php">Click here to Login!</a>
+               </span>
+            </div>
          </div>
       </form>
    </div>
