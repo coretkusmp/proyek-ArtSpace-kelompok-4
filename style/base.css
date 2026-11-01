@@ -1,37 +1,273 @@
 @import url(variable-warna.css);
 
-body{
-   margin: 0px;
 
+body {
+   margin: 0px;
+   display: flex;
+   flex-direction: column;
+   gap: 1vh;
 }
-.bg-landing{
-   background-image: url("/Pictures/bgLanding.png");
+
+
+
+/*? background */
+.bg-landing {
+   background-image: url("/assets/backgrounds/bgLanding.png");
    background-attachment: fixed;
    background-repeat: no-repeat;
    background-position: 7vw -2vh;
    background-size: 85%;
 }
-.bg-ocean{
-   background-image: url("/Pictures/bgOcean.png");
+.bg-ocean {
+   background-image: url("/assets/backgrounds/bgOcean.png");
    background-attachment: fixed;
    background-repeat: no-repeat;
    background-size: 100%;
-   background-color: rgba(255,255,255,0.6);
+   background-color: rgba(255, 255, 255, 0.5);
    background-blend-mode: lighten;
 }
-.bg-ocean{
-   background-image: url("/Pictures/bgOcean.png");
+.bg-starry-night {
+   background-image: url("/assets/backgrounds/starryNight.png");
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+   background-position: 0vw -48vh;
+   background-size: 100%;
+   background-color: rgba(255, 255, 255, 0.5);
+   background-blend-mode: lighten;
+}
+.bg-fish {
+   background-image: url("/assets/backgrounds/fish.png");
    background-attachment: fixed;
    background-repeat: no-repeat;
    background-size: 100%;
-   background-color: rgba(255,255,255,0.6);
-  background-blend-mode: lighten;
+   background-color: rgba(255, 255, 255, 0.5);
+   background-blend-mode: lighten;
+   background-position: 0vw -10vh;
 }
-.bg-ocean{
-   background-image: url("/Pictures/bgOcean.png");
-   background-attachment: fixed;
-   background-repeat: no-repeat;
-   background-size: 100%;
-   background-color: rgba(255,255,255,0.6);
-  background-blend-mode: lighten;
+/*? background */
+
+
+
+/*? navbar */
+nav{
+   position: relative;
+   z-index: 999;
+   background-color: white;
+   border: 1px solid black;
 }
+
+nav ul{
+   padding: 0;
+   height: 7vh;
+   list-style: none;
+   display: flex;
+   justify-content: center;
+   justify-content: space-around;
+   align-items: center;
+   margin: 0.5vh 1vw;
+}
+
+nav ul a{
+   text-decoration: none;
+}
+
+nav ul a li.defaultButton{
+   font-family: "Plus Jakarta Sans", sans-serif;
+   font-size: 20px;
+   color: black;
+}
+
+nav ul a li.defaultButton:hover{
+   color: blue;
+   transition-duration: 300ms;
+}
+
+nav ul a li.navbarTitle{
+   font-family: "Plus Jakarta Sans", sans-serif;
+   font-size: 20px;
+   font-weight: bold;
+   color: var(--artSpace);
+}
+
+nav ul a li.search input.searchInput{
+   border-radius: 10px;
+   padding: 0vh 1vw;
+   background-color: var(--search-gray);
+   border: none;
+   font-family: "Plus Jakarta Sans", sans-serif;
+   font-size: 20px;
+   width: 34.25vw;
+   height: 5vh;
+   color: black;
+}
+
+nav ul a li.search input.searchInput::placeholder{
+   color: black;
+}
+
+nav ul a li.loginSignUpButton{
+   background-color: var(--button-blue);
+   padding: 0.5vh 0.5vw;
+   border-radius: 10px;
+   font-family: "Plus Jakarta Sans", sans-serif;
+   font-size: 20px;
+   color: white;
+   font-size: 20px;
+}
+
+nav ul a li.loginSignUpButton:hover{
+   background-color: var(--button-blue-hover);
+}
+/*? navbar */
+
+
+
+/*? sidebar */
+.content{
+   display: flex;
+   flex-direction: row;
+   gap: 0vh 2vw;
+}
+
+.content .sidebar{
+   padding: 2vh 2vw;
+   background-color: rgba(255, 255, 255, 0.5);
+   height: 90vh;
+   border: 1px solid black;
+}
+
+.content .sidebar ul{
+   padding: 0;
+   display: flex;
+   gap: 2vh;
+   flex-direction: column;
+   list-style: none;
+}
+
+.content .sidebar ul a{
+   text-decoration: none;
+   border: 1px solid black;
+   width: 10vw;
+   height: 5vh;
+   display: flex;
+   align-items: center;
+}
+ 
+.content .sidebar ul a:hover{
+   background-color: var(--newa);
+   font-weight: bold;
+   transition-duration: 300ms;
+}
+
+.content .sidebar ul a:hover li{
+   transition-duration: 300ms;
+   color: white;
+}
+
+.content .sidebar ul a li{
+   margin: 0vh 1vw;
+   font-family: "Plus Jakarta Sans", sans-serif;
+   font-size: 20px;
+   color: black;
+}
+/*? sidebar */
+
+
+
+/*? footer */
+footer{
+   display: flex;
+   flex-direction: row;
+   background-color: var(--footer-cyan);
+}
+
+footer .footer-inner{
+   font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+footer .footer-inner ul{
+   list-style: none;
+   padding: 0;
+   margin: 3vh 4.75vw;
+}
+
+footer .footer-inner ul .title-description{
+   display: flex;
+   flex-direction: column;
+}
+
+footer .footer-inner ul .title-description h1{
+   display: flex;
+   justify-content: center;
+}
+
+footer .footer-inner ul{
+   
+}
+
+footer #footer-inner-1{
+
+}
+
+footer #footer-inner-1 .contact-icons{
+
+}
+
+footer #footer-inner-1 .contact-icons ul{
+   display: flex;
+   gap: 0vh 1vw;
+   margin: 0vh -0.25vw;
+}
+
+footer #footer-inner-1{
+   width: 33vw;
+}
+
+footer #footer-inner-2{
+   width: 33vw;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+footer #footer-inner-2 ul{
+   display: flex;
+   flex-direction: column;
+   gap: 1vh 0vw;
+}
+
+footer #footer-inner-2 ul a{
+   text-decoration: none;
+   color: black;
+}
+
+footer #footer-inner-2 ul a:hover{
+   transition-duration: 300ms;
+   text-decoration: underline;
+   color: blue;
+}
+
+footer #footer-inner-3{
+   width: 33vw;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+footer #footer-inner-3 ul{
+   display: flex;
+   flex-direction: column;
+   gap: 1vh 0vw;
+}
+
+footer #footer-inner-3 ul a{
+   text-decoration: none;
+   color: black;
+}
+
+footer #footer-inner-3 ul a:hover{
+   transition-duration: 300ms;
+   text-decoration: underline;
+   color: blue;
+}
+/*? footer */

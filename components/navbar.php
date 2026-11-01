@@ -2,49 +2,49 @@
       
    <ul>
       <a href="/index.php">
-         <li id="navbarTitle">
+         <li class="navbarTitle">
             ArtSpace
          </li>
       </a>
       
-      <a href="#">
-         <li id="defaultButton">
+      <a href="/pages/home.php">
+         <li class="defaultButton">
             Home
          </li>
       </a>
    
       <a href="#">
-         <li id="defaultButton">
+         <li class="defaultButton">
             Explore
          </li>
       </a>
 
       <a href="#">
-         <li id="search">
-            <input id="searchInput" type="Search">
+         <li class="search">
+            <input class="searchInput" type="Search" placeholder="Search">
          </li>
       </a>
 
       <a href="#">
-         <li id="defaultButton">
+         <li class="defaultButton">
             Create
          </li>
       </a>
 
       <a href="#">
-         <li id="defaultButton">
+         <li class="defaultButton">
             News
          </li>
       </a>
 
-      <a href="#">
-         <li id="loginSignUpButton">
+      <a href="/pages/auth/login.php">
+         <li class="loginSignUpButton">
             Log in
          </li>
       </a>
 
-      <a href="#">
-         <li id="loginSignUpButton">
+      <a href="/pages/auth/signup.php">
+         <li class="loginSignUpButton">
             Sign up
          </li>
       </a>
