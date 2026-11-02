@@ -4,7 +4,7 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Sign up - Artspace</title>
+   <title>Sign up - ArtSpace</title>
 
    <!-- font -->
    <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,8 +15,6 @@
 
    <link rel="stylesheet" href="/style/base.css">
    <link rel="stylesheet" href="/style/signupLogin.css">
-   <link rel="stylesheet" href="/style/navbar.css">
-
 </head>
 
 <body class="bg-ocean">

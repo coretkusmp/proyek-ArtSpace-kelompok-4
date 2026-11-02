@@ -1,0 +1,71 @@
+.mainContent{
+}
+
+.mainContent ul{
+   display: flex;
+   flex-wrap:wrap;
+   gap: 1vw;
+   flex-direction: row;
+   list-style: none;
+   padding: 0;
+   
+}
+
+.mainContent ul a{
+   text-decoration: none;
+   border: 1px solid black;
+   border-radius: 33px;
+   width: 15vw;
+   height: 50vh;
+   overflow: hidden;
+}
+
+.mainContent ul a img{
+   width: 18vw;
+   height: 60vh;
+   position: relative;
+   top: -3vh;
+   left: -3vw;
+}
+
+.mainContent .description{
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   background-color: rgba(000, 000, 000, 0.5);
+   box-shadow: -2vw -1vh 10px  rgba(000, 000, 000, 0.5);
+   font-family: "Inter";
+   color: white;
+   font-weight: bold;
+   height: 20vh;
+   position: relative;
+   top: -26vh;
+   opacity: 0%;
+}
+
+.mainContent .description span{
+   display: flex;
+   flex-direction: row;
+   position: relative;
+   top: -3vh;
+   left: 10vw;
+}
+
+.mainContent .description span p{
+   position: relative;
+   top: -0.5vh;
+}
+
+.mainContent .description span img{
+   position: relative;
+   top: 1vh;
+   left: -0.75vw;
+   width: 2vw;
+   height: 2vw;
+}
+
+.mainContent:hover li:hover .description{
+   transition-duration: .5s;
+   opacity: 100%;
+}
