@@ -1,3 +1,8 @@
+<?php 
+require_once __DIR__ . "/../repositories/posts-repository.php";
+$posts = getPosts(); 
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,136 +30,21 @@
       <?php require_once __DIR__ . "/../components/sidebar.php" ?>
       <div class="mainContent">
          <ul>
+            <?php foreach ($posts as $post):?>
             <a href="#">
                <li>
                   <div class="post">
-                     <img src="/assets/Posts/spiderman.jpg" alt="">
+                     <img src="<?= $post['imageLocation'];?>" alt="">
                      <div class="description">
-                        <p>A spiderman staring at you</p>
+                        <p><?= $post['postTitle'] ?></p>
                         <span><img src="/assets/icons/view.png" alt="view:">
-                           <p>0</p>
+                           <p><?= $post['views'] ?></p>
                         </span>
                      </div>
                   </div>
                </li>
             </a>
-            <a href="#">
-               <li>
-                  <div class="post">
-                     <img src="/assets/Posts/sunflowers.jpeg" alt="">
-                     <div class="description">
-                        <p>A pretty sunflower</p>
-                        <span><img src="/assets/icons/view.png" alt="view:">
-                           <p>0</p>
-                        </span>
-                     </div>
-                  </div>
-               </li>
-            </a>
-            <a href="#">
-               <li>
-                  <div class="post">
-                     <img src="/assets/Posts/cat.jpeg" alt="">
-                     <div class="description">
-                        <p>A cat staring at the stars</p>
-                        <span><img src="/assets/icons/view.png" alt="view:">
-                           <p>0</p>
-                        </span>
-                     </div>
-                  </div>
-               </li>
-            </a>
-            <a href="#">
-               <li>
-                  <div class="post">
-                     <img src="/assets/Posts/fishes.jpeg" alt="">
-                     <div class="description">
-                        <p>Fishes swing in the ocean</p>
-                        <span><img src="/assets/icons/view.png" alt="view:">
-                           <p>0</p>
-                        </span>
-                     </div>
-                  </div>
-               </li>
-            </a>
-            <a href="#">
-               <li>
-                  <div class="post">
-                     <img src="/assets/Posts/angle.jpg" alt="">
-                     <div class="description">
-                        <p>A dramatic falling winged figure</p>
-                        <span><img src="/assets/icons/view.png" alt="view:">
-                           <p>0</p>
-                        </span>
-                     </div>
-                  </div>
-               </li>
-            </a>
-            <a href="#">
-               <li>
-                  <div class="post">
-                     <img src="/assets/Posts/person.jpg" alt="">
-                     <div class="description">
-                        <p>A person looking at butterfly</p>
-                        <span><img src="/assets/icons/view.png" alt="view:">
-                           <p>0</p>
-                        </span>
-                     </div>
-                  </div>
-               </li>
-            </a>
-            <a href="#">
-               <li>
-                  <div class="post">
-                     <img src="/assets/Posts/ships.jpeg" alt="">
-                     <div class="description">
-                        <p>A classic sailing ship at sea</p>
-                        <span><img src="/assets/icons/view.png" alt="view:">
-                           <p>0</p>
-                        </span>
-                     </div>
-                  </div>
-               </li>
-            </a>
-            <a href="#">
-               <li>
-                  <div class="post">
-                     <img src="/assets/Posts/axolotl.jpeg" alt="">
-                     <div class="description">
-                        <p>Cute floating axolotl underwater art</p>
-                        <span><img src="/assets/icons/view.png" alt="view:">
-                           <p>0</p>
-                        </span>
-                     </div>
-                  </div>
-               </li>
-            </a>
-            <a href="#">
-               <li>
-                  <div class="post">
-                     <img src="/assets/Posts/trees.jpeg" alt="">
-                     <div class="description">
-                        <p>Van Gogh's signature starry night sky</p>
-                        <span><img src="/assets/icons/view.png" alt="view:">
-                           <p>0</p>
-                        </span>
-                     </div>
-                  </div>
-               </li>
-            </a>
-            <a href="#">
-               <li>
-                  <div class="post">
-                     <img src="/assets/Posts/artRooms.jpeg" alt="">
-                     <div class="description">
-                        <p>A cozy artist's studio setup.</p>
-                        <span><img src="/assets/icons/view.png" alt="view:">
-                           <p>0</p>
-                        </span>
-                     </div>
-                  </div>
-               </li>
-            </a>
+            <?php endforeach; ?>
          </ul>
       </div>
    </div>

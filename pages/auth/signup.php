@@ -14,7 +14,7 @@
    <!-- font -->
 
    <link rel="stylesheet" href="/style/base.css">
-   <link rel="stylesheet" href="/style/signupLogin.css">
+   <link rel="stylesheet" href="/style/signup-login.css">
 </head>
 
 <body class="bg-ocean">
