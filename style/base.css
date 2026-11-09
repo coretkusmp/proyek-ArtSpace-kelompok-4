@@ -1,4 +1,4 @@
-@import url(variable-warna.css);
+@import url(color-variable.css);
 
 
 body {
@@ -12,14 +12,14 @@ body {
 
 /*? background */
 .bg-landing {
-   background-image: url("/assets/backgrounds/bgLanding.png");
+   background-image: url("/assets/backgrounds/bg-landing.png");
    background-attachment: fixed;
    background-repeat: no-repeat;
    background-position: 7vw -2vh;
    background-size: 85%;
 }
 .bg-ocean {
-   background-image: url("/assets/backgrounds/bgOcean.png");
+   background-image: url("/assets/backgrounds/bg-ocean.png");
    background-attachment: fixed;
    background-repeat: no-repeat;
    background-size: 100%;
@@ -27,7 +27,7 @@ body {
    background-blend-mode: lighten;
 }
 .bg-starry-night {
-   background-image: url("/assets/backgrounds/starryNight.png");
+   background-image: url("/assets/backgrounds/starry-night.png");
    background-attachment: fixed;
    background-repeat: no-repeat;
    background-position: 0vw -48vh;
