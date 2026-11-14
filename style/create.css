@@ -1,0 +1,133 @@
+@import url(color-variable.css);
+
+input.inputImage{
+   border: 1px solid black;
+   width: 20vw;
+   height: 20vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+input.inputImage::file-selector-button{
+   cursor: pointer;
+   width: 100%;
+   height: 100%;
+   padding: 10vw 0vw;
+   font-weight: bold;
+   border: none;
+   background-color: rgba(0, 0, 0, 0);
+   background-image: url("/assets/icons/upload.png");
+   background-position: 5vw 1vw;
+   background-size: 10vw;
+   background-repeat: no-repeat;
+   color: rgba(0, 0, 0, 0);
+}
+
+form{
+   display: flex;
+   flex-direction: column;
+}
+
+form .form-header{
+   display: flex;
+   flex-direction: row;
+   margin: 0vw 0vw 0vw -5vw;
+   gap: 2vw;
+}
+
+form .form-header label.inputImage{
+   position: relative;
+   z-index: -1;
+   top: 16vw;
+   left: 15vw;
+}
+
+form .form-header ul{
+   display: flex;
+   flex-direction: column;
+   gap: 1vw;
+   list-style: none;
+   padding: 0;
+}
+
+form .form-header ul li{
+   display: flex;
+   flex-direction: column;
+   list-style: none;
+   padding: 0;
+}
+
+form .form-header ul li input, form .form-header ul li textarea{
+   background-color: rgba(0, 0, 0, 0);
+   border: 1px solid black;
+   display: flex;
+}
+
+form .form-header ul li input{
+   width: 55vw;
+   height: 2vw;
+}
+
+form .form-header ul li textarea{
+   width: 55vw;
+   height: 13vw;
+}
+
+.tags{
+   display: flex;
+   flex-direction: column;
+   margin: 0vw 3vw;
+}
+
+.tags ul{
+   list-style: none;
+   padding: 0;
+   display: flex;
+   gap: 1vw 0vw;
+   flex-wrap: wrap;
+   border: 1px solid black;
+   padding: 1vw 0vw;
+}
+
+.tags ul li{
+   transition-duration: .3s;
+   cursor: pointer;
+   background-color: white;
+   border-radius: 2vw;
+   border: 1px solid black;
+   padding: 0.5vw 2vw;
+   margin: 0vw 1vw;
+   user-select: none;
+}
+
+.tags ul li.selected{
+   transition-duration: .3s;
+   background-color: var(--button-blue);
+   color: white;
+}
+
+.form-footer{
+   margin: 0vw 3vw;
+   display: flex;
+   justify-content: space-between;
+}
+
+
+.form-footer a, .form-footer button{
+   border-radius: 1vw;
+   font-weight: bold;
+   padding: .75vw 3vw;
+   text-decoration: none;
+   color: white;
+   border: 1px solid black;
+   cursor: pointer;
+}
+
+
+.form-footer a{
+   background-color: var(--cancel);
+}
+.form-footer button{
+   background-color: var(--newa);
+}
