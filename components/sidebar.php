@@ -1,8 +1,8 @@
 <div class="sidebar">
    <ul>
       <a href="/pages/home.php"><li>Home</li></a>
-      <a href="#"><li>Explore</li></a>
-      <a href="#"><li>Create</li></a>
+      <a href="/pages/explore.php"><li>Explore</li></a>
+      <a href="/pages/create.php"><li>Create</li></a>
       <a href="#"><li>News</li></a>
       <a href="#"><li>Type</li></a>
       <a href="#"><li>Settings</li></a>

@@ -13,19 +13,19 @@
          </li>
       </a>
    
-      <a href="#">
+      <a href="/pages/explore.php">
          <li class="defaultButton">
             Explore
          </li>
       </a>
 
-      <a href="#">
+      <a href="/pages/explore.php">
          <li class="search">
             <input class="searchInput" type="Search" placeholder="Search">
          </li>
       </a>
 
-      <a href="#">
+      <a href="/pages/create.php">
          <li class="defaultButton">
             Create
          </li>

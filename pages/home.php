@@ -17,6 +17,11 @@ $posts = getPosts();
    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
    <!-- font -->
+    
+   <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+
+   <!-- icon -->
 
    <link rel="stylesheet" href="/style/base.css">
    <link rel="stylesheet" href="/style/home.css">
@@ -28,25 +33,7 @@ $posts = getPosts();
    <?php require_once __DIR__ . "/../components/navbar.php" ?>
    <div class="content">
       <?php require_once __DIR__ . "/../components/sidebar.php" ?>
-      <div class="mainContent">
-         <ul>
-            <?php foreach ($posts as $post):?>
-            <a href="#">
-               <li>
-                  <div class="post">
-                     <img src="<?= $post['imageLocation'];?>" alt="">
-                     <div class="description">
-                        <p><?= $post['postTitle'] ?></p>
-                        <span><img src="/assets/icons/view.png" alt="view:">
-                           <p><?= $post['views'] ?></p>
-                        </span>
-                     </div>
-                  </div>
-               </li>
-            </a>
-            <?php endforeach; ?>
-         </ul>
-      </div>
+      <?php require_once __DIR__ . "/../components/posts.php";?>
    </div>
    <?php require_once __DIR__ . "/../components/footer.php" ?>
 
