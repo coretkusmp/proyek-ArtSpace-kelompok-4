@@ -14,11 +14,10 @@
 }
 
 .title-and-form form{
-
    display: flex;
    flex-direction: column;
    justify-content: center;
-
+   background-color: white;
    margin: -3vw 0;
    border-radius: 60px;
    border: 1px solid black;
@@ -27,6 +26,8 @@
 }
 
 .title-and-form form .form-header{
+   position: relative;
+   top: -5vw;
    margin: 51px 81px;
    display: flex;
    flex-direction: column;

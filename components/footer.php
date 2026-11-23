@@ -39,3 +39,6 @@
          </ul>
       </div>
 </footer>
+<div class="footer-footer">
+   &copy; Artspace
+</div>

@@ -1,0 +1,45 @@
+.header-news .news{
+   height: 22vw;
+   width: 80vw;
+}
+
+.news{
+   color: black;
+   list-style: none;
+   padding: 0;
+   background-color: white;
+   border: 1px solid black;
+   display: flex;
+   text-align: center;
+   overflow: hidden;
+   border-radius: 2vw;
+   align-items: center;
+}
+
+a{
+   text-decoration: none;
+}
+
+.news span{
+   display: flex;
+   flex-direction: column;
+   gap: 1vw;
+}
+
+.news span h1, .news span h2{
+   margin: 0vw 2vw;
+}
+
+.news img{
+   width: 21vw;
+}
+
+.footer-news{
+   display: flex;
+   gap: 3vw;
+   margin-right: 3vw;
+}
+
+.footer-news .news{
+   height: 25vw;
+}
