@@ -10,11 +10,11 @@
    flex-direction: row;
    list-style: none;
    padding: 0;
-   
 }
 
 .mainContent ul a{
    text-decoration: none;
+   justify-content: center;
    border: 1px solid black;
    border-radius: 33px;
    width: 15vw;

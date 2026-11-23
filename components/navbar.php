@@ -31,7 +31,7 @@
          </li>
       </a>
 
-      <a href="#">
+      <a href="/pages/news/">
          <li class="defaultButton">
             News
          </li>

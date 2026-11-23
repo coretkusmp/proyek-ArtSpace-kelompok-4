@@ -1,4 +1,5 @@
 @import url(color-variable.css);
+@import url(form.css);
 
 input.inputImage{
    border: 1px solid black;
@@ -7,6 +8,15 @@ input.inputImage{
    display: flex;
    justify-content: center;
    align-items: center;
+}
+
+img#previewImage{
+   position: absolute;
+   left: 3vw;
+   top: 0vw;
+   width: 20vw;
+   height: 20vw;
+   pointer-events: none;
 }
 
 input.inputImage::file-selector-button{

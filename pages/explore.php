@@ -26,6 +26,7 @@ $posts = getPosts();
    <link rel="stylesheet" href="/style/base.css">
    <link rel="stylesheet" href="/style/home.css">
    <link rel="stylesheet" href="/style/posts.css">
+   <link rel="stylesheet" href="/style/explore.css">
 
 </head>
 

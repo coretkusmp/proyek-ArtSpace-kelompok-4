@@ -1,6 +1,11 @@
 <?php
 require_once __DIR__ . "/../repositories/posts-repository.php";
 $posts = getPosts();
+
+$errors = $_SESSION['errors'];
+$old = $_SESSION['old'];
+
+unset($_SESSION['errors'], $_SESSION['old'])
 ?>
 
 <!DOCTYPE html>
@@ -34,27 +39,27 @@ $posts = getPosts();
    <div class="content">
       <?php require_once __DIR__ . "/../components/sidebar.php" ?>
       <div class="mainContent">
-         <form method="post" action="">
+         <form method="post" action="" enctype="multipart/form-data">
             <div class="form-header">
                <label class="inputImage">Upload Image</label>
-               <input type="file" class="inputImage" accept="image/png, image/jpg, image/jpeg">
+               <input type="file" class="inputImage" id="inputImage" accept="image/png, image/jpg, image/jpeg">
+               <img src="#" id="previewImage" alt="">
                <ul>
-                  <li><label for="">Title</label> <input type="text"></li>
-                  <li><label for="">Description</label> <textarea></textarea></li>
+                  <li><label for="">Title</label> <input name="title" type="text"></li>
+                  <li><label for="">Description</label> <textarea name="description"></textarea></li>
                </ul>
             </div>
-
             <div class="tags">
                <label for="">Tag</label>
                <ul>
-                  <li onclick="toggleTag(0)" class="" value="StreetWear">StreetWear</li>
-                  <li onclick="toggleTag(1)" class="" value="Ilustrasi">Ilustrasi</li>
-                  <li onclick="toggleTag(2)" class="" value="3D">3D</li>
-                  <li onclick="toggleTag(3)" class="" value="Foto Alam">Foto Alam</li>
-                  <li onclick="toggleTag(4)" class="" value="Anime & Karakter">Anime & Karakter</li>
-                  <li onclick="toggleTag(5)" class="" value="Karya Kreatif">Karya Kreatif</li>
-                  <li onclick="toggleTag(6)" class="" value="Seni Digital">Seni Digital</li>
-                  <li onclick="toggleTag(7)" class="" value="Wallpaper">Wallpaper</li>
+                  <li  onclick="toggleTag(0)" class="tag" value="StreetWear">StreetWear</li>
+                  <li onclick="toggleTag(1)" class="tag" value="Ilustrasi">Ilustrasi</li>
+                  <li onclick="toggleTag(2)" class="tag" value="3D">3D</li>
+                  <li onclick="toggleTag(3)" class="tag" value="Foto Alam">Foto Alam</li>
+                  <li onclick="toggleTag(4)" class="tag" value="Anime & Karakter">Anime & Karakter</li>
+                  <li onclick="toggleTag(5)" class="tag" value="Karya Kreatif">Karya Kreatif</li>
+                  <li onclick="toggleTag(6)" class="tag" value="Seni Digital">Seni Digital</li>
+                  <li onclick="toggleTag(7)" class="tag" value="Wallpaper">Wallpaper</li>
                </ul>
             </div>
 
@@ -65,6 +70,7 @@ $posts = getPosts();
    <?php require_once __DIR__ . "/../components/footer.php" ?>
 
 </body>
+<script src="/script/preview-image.js"></script>
 <script src="/script/tag.js"></script>
 
 </html>

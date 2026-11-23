@@ -1,10 +1,11 @@
 :root{
    --biru-muda-pucat: #E6F6FF;
    --button-blue: #0066FF;
-   --button-blue-hover: #0006FF;
+   --button-blue-hover: #0059DD;
    --search-gray: #BBBBBB;
    --artSpace: #2F80ED;
    --newa: #4FB1FF;
-   --footer-cyan: rgba(230, 246, 255, 0.75);
+   --footer-cyan: rgb(230, 246, 255);
+   --footer-footer: #D5E3EB;
    --cancel: #FF2525;
 }
