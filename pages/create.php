@@ -2,8 +2,10 @@
 require_once __DIR__ . "/../repositories/posts-repository.php";
 $posts = getPosts();
 
-$errors = $_SESSION['errors'];
-$old = $_SESSION['old'];
+session_start();
+
+$errors = $_SESSION['errors'] ?? [];
+$old = $_SESSION['old'] ?? [];
 
 unset($_SESSION['errors'], $_SESSION['old'])
 ?>

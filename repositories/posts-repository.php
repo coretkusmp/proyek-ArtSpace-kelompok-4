@@ -12,3 +12,16 @@ function getPosts(){
    $posts = $stmt->fetchAll();
    return $posts;
 }
+
+function getPost($id){
+   global $pdo;
+
+   $query = "select * from posts where id = :id";
+      $stmt = $pdo->prepare($query);
+   $stmt->execute([
+      "id" => $id
+   ]);
+
+   $post = $stmt->fetch();
+   return $post;
+}
