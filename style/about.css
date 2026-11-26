@@ -1,0 +1,15 @@
+.mainContent{
+   display: flex;
+   align-items: center;
+   width: 100vw;
+}
+
+.mainContent ul{
+   display: flex;gap: 2vw;
+   list-style: none;
+   padding: 0;
+}
+
+.mainContent ul li{
+   border: 1px solid black;
+}

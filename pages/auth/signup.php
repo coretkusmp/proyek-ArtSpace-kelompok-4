@@ -1,3 +1,18 @@
+<?php 
+
+require_once __DIR__ . "/../../config/database.php";
+require_once __DIR__ . "/../../repositories/users-repository.php";
+require_once __DIR__ . "/../../validations/user-validation.php";
+
+session_start();
+
+$errors = $_SESSION['errors'] ?? [];
+$old = $_SESSION['old'] ?? [];
+
+unset($_SESSION['errors'], $_SESSION['old'])
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,12 +41,16 @@
       <form method="POST" action="">
          <div class="form-header">
             <div class="email-password-input">
+               <label>Username:</label>
+               <input type="text" value="<?= $old['username'] ?? '' ?>" name="username">
+            </div>
+            <div class="email-password-input">
                <label>Email:</label>
-               <input type="text">
+               <input type="text" value="<?= $old['email'] ?? '' ?>" name="email">
             </div>
             <div class="email-password-input">
                <label>Password:</label>
-               <input type="text">
+               <input type="text" value="<?= $old['password'] ?? '' ?>" name="password">
             </div>
          </div>
 
