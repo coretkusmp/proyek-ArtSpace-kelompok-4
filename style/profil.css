@@ -1,0 +1,452 @@
+
+/* =====================================
+    PROFILE PAGE
+===================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    background: white;
+}
+
+
+/* =====================================
+   NAVBAR
+===================================== */
+
+.profile-navbar {
+    height: 61px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 20px;
+    background: white;
+    border: 1px solid #aaa;
+    gap: 20px;
+}
+
+.profile-navbar a {
+    text-decoration: none;
+    color: #111;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.profile-navbar a:hover {
+    color: #2f80ed;
+}
+
+.profile-navbar .brand {
+    color: #3688e5;
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.profile-search {
+    width: 37%;
+    height: 35px;
+    border-radius: 10px;
+    background: #bdbdbd;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.profile-search input {
+    flex: 1;
+    min-width: 0;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: inherit;
+    font-size: 13px;
+}
+
+.profile-search button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    width: 25px;
+    padding: 2px;
+}
+
+.profile-search svg {
+    width: 17px;
+    fill: none;
+    stroke: #111;
+    stroke-width: 2;
+}
+
+.navbar-avatar {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.mini-avatar {
+    width: 26px;
+    height: 26px;
+    image-rendering: pixelated;
+}
+
+
+/* =====================================
+   CONTENT AND SIDEBAR
+===================================== */
+
+.profile-content {
+    display: flex;
+    width: 100%;
+    min-height: 524px;
+    gap: 0;
+}
+
+.profile-content .sidebar {
+    flex: 0 0 132px;
+    width: 132px;
+    min-height: 524px;
+    height: auto;
+    padding: 7px 12px;
+    background: white;
+    border: 1px solid #aaa;
+}
+
+.profile-content .sidebar ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 0;
+    margin: 0;
+}
+
+.profile-content .sidebar ul a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 31px;
+    border: 1px solid #999;
+    text-decoration: none;
+}
+
+.profile-content .sidebar ul a li {
+    margin-left: 7px;
+    font-size: 12px;
+    color: #222;
+}
+
+.profile-content .sidebar ul a:hover {
+    background: #4aaff4;
+}
+
+.profile-content .sidebar ul a:hover li {
+    color: white;
+}
+
+
+/* =====================================
+   PROFILE MAIN
+===================================== */
+
+.profile-main {
+    flex: 1;
+    min-width: 0;
+    min-height: 524px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* =====================================
+   PROFILE INFORMATION
+===================================== */
+
+.profile-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 65px;
+    text-align: center;
+}
+
+.profile-photo {
+    width: 90px;
+    height: 90px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+}
+
+.main-avatar {
+    width: 100%;
+    height: 100%;
+    image-rendering: pixelated;
+}
+
+.profile-name {
+    font-size: 14px;
+    font-weight: 800;
+    margin: 8px 0 3px;
+    color: #111;
+}
+
+.profile-email {
+    font-size: 11px;
+    font-weight: 700;
+    margin: 0 0 8px;
+    color: #222;
+}
+
+
+/* =====================================
+   CHANGE PHOTO BUTTON
+===================================== */
+
+.change-photo {
+    height: 28px;
+    width: 132px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background: white;
+    color: #333;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.change-photo:hover {
+    background: #eaf6ff;
+}
+
+.change-photo svg {
+    width: 15px;
+    height: 15px;
+    fill: none;
+    stroke: #333;
+    stroke-width: 1.8;
+}
+
+
+/* =====================================
+   PROFILE ACTION BUTTONS
+===================================== */
+
+.profile-actions {
+    width: min(585px, 76%);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 79px;
+    margin-bottom: 40px;
+}
+
+.profile-action {
+    width: 100%;
+    height: 36px;
+    border: none;
+    border-radius: 15px;
+    background: #4aaff4;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.profile-action:hover {
+    background: #2899e8;
+}
+
+.profile-action svg {
+    width: 30px;
+    height: 30px;
+    fill: none;
+    stroke: #000;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.profile-action.delete-action svg {
+    width: 31px;
+    height: 31px;
+}
+
+
+/* =====================================
+   FOOTER
+===================================== */
+
+.profile-footer {
+    width: 100%;
+    min-height: 238px;
+    background: #e4f5ff;
+    border: 1px solid #aaa;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 15px 5.5%;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.profile-footer-about h1 {
+    font-size: 32px;
+    font-weight: 500;
+    margin: 5px 0 22px 45px;
+}
+
+.profile-footer-about p {
+    max-width: 260px;
+    font-size: 10px;
+    line-height: 1.35;
+    margin: 0;
+    color: #333;
+}
+
+.footer-social {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.footer-social a img {
+    width: 19px;
+    height: 19px;
+    object-fit: contain;
+}
+
+.profile-footer-map,
+.profile-footer-legal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+}
+
+.profile-footer-map h3,
+.profile-footer-legal h3 {
+    font-size: 11px;
+    margin: 0 0 2px;
+}
+
+.profile-footer-map a,
+.profile-footer-legal a {
+    text-decoration: none;
+    font-size: 10px;
+    color: #333;
+}
+
+.profile-footer-map a:hover,
+.profile-footer-legal a:hover {
+    color: #2879c9;
+    text-decoration: underline;
+}
+
+
+/* =====================================
+   COPYRIGHT
+===================================== */
+
+.profile-copyright {
+    width: 100%;
+    min-height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #d7e6ed;
+    border: 1px solid #aaa;
+    font-size: 10px;
+}
+
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media (max-width: 700px) {
+
+    .profile-navbar {
+        gap: 10px;
+        padding: 0 8px;
+    }
+
+    .profile-navbar a {
+        font-size: 11px;
+    }
+
+    .profile-search {
+        width: 25%;
+    }
+
+    .profile-content .sidebar {
+        flex-basis: 105px;
+        width: 105px;
+        padding: 7px;
+    }
+
+    .profile-content .sidebar ul a li {
+        font-size: 10px;
+    }
+
+    .profile-actions {
+        width: 85%;
+    }
+
+    .profile-footer {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px 10px;
+        padding: 20px;
+    }
+
+    .profile-footer-about {
+        grid-column: 1 / -1;
+    }
+
+    .profile-footer-about h1 {
+        margin-left: 0;
+    }
+
+}
+
+@media (max-width: 420px) {
+
+    .profile-navbar {
+        gap: 7px;
+    }
+
+    .profile-navbar .brand {
+        font-size: 13px;
+    }
+
+    .profile-navbar a {
+        font-size: 9px;
+    }
+
+    .profile-content .sidebar {
+        flex-basis: 90px;
+        width: 90px;
+    }
+
+    .profile-action {
+        font-size: 12px;
+    }
+
+}
