@@ -1,0 +1,28 @@
+.type-main {
+    padding-top: 1vw;
+}
+
+.category-list {
+    display: flex;
+    gap: 1vw;
+    flex-wrap: wrap;
+    margin-bottom: 18px;
+}
+
+.category-list a {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    padding: 9px 14px;
+    color: #222;
+    text-decoration: none;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.category-list a:hover,
+.category-list a.category-active {
+    background: #2f80ed;
+    color: white;
+    border-color: #2f80ed;
+}
