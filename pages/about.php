@@ -37,10 +37,10 @@ $posts = getPosts();
       <h2>The creative minds and engineers shaping the future of digital art</h2>
 
       <ul class="anggota">
-         <li><img src="" alt="Revaldo"> <p>Revaldo</p> <p>Founder & Lead UI/UX Designer</p></li>
-         <li><img src="" alt="Anderson"> <p>Anderson</p> <p>Co-Founder & Backend Developer</p></li>
-         <li><img src="" alt="Alberth"> <p>Alberth</p> <p>Frontend Developer</p></li>
-         <li><img src="" alt="Justin"> <p>Justin</p> <p>Data & DevOps Specialist</p></li>
+         <li><span><img src="/assets/about/revaldo.png" alt="Revaldo"> </span> <p>Revaldo</p> <p>Founder & Lead UI/UX Designer</p></li>
+         <li><span><img src="/assets/about/anderson.png" alt="Anderson"> </span> <p>Anderson</p> <p>Co-Founder & Backend Developer</p></li>
+         <li><span><img src="/assets/about/alberth.png" alt="Alberth"> </span> <p>Alberth</p> <p>Frontend Developer</p></li>
+         <li><span><img src="/assets/about/justin.png" alt="Justin"> </span> <p>Justin</p> <p>Data & DevOps Specialist</p></li>
       </ul>
       </div>
    </div>

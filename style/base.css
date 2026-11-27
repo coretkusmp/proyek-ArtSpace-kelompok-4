@@ -185,6 +185,12 @@ footer .footer-inner{
    font-family: "Plus Jakarta Sans", sans-serif;
 }
 
+footer .footer-inner#footer-inner-2, #footer-inner-3{
+   font-family: "Plus Jakarta Sans", sans-serif;
+   position: relative;
+   top: 2vw;
+}
+
 footer .footer-inner ul{
    list-style: none;
    padding: 0;

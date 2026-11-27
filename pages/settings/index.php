@@ -8,7 +8,7 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Home - ArtSpace</title>
+   <title>Settings - ArtSpace</title>
 
    <!-- font -->
    <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,7 +32,7 @@
    <div class="content">
       <?php require_once __DIR__ . "/../../components/sidebar.php" ?>
       <ul class="settings">
-         <a href="#">
+         <a href="profile.php">
             <li>Edit Profil & Informasi Akun</li>
          </a><a href="#">
             <li>Keamanan & Ubah Kata Sandi</li>
