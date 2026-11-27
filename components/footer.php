@@ -4,7 +4,7 @@
             <li>
                <div class="title-description">
                   <h1>ArtSpace</h1>
-                  <p>Tempat dimana orang-orang dapat berkarya dan melihat referensi karya.</p>
+                  <p>Tempat dimana orang-orang dapat berkarya dan melihat referensi karya. Bergabunglah dan bagikan berbagai inspirasi karya seni menakjubkan setiap hari. Mari dukung seniman lokal maupun internasional dengan mengapresiasi dan memberikan ulasan pada setiap karya yang diunggah.</p>
                </div>
             </li>
             <li>
@@ -20,7 +20,7 @@
          </ul>
       </div>
       <div class="footer-inner" id="footer-inner-2">
-         <p>Site Map</p>
+         <p style="font-weight: bold;">Site Map</p>
          <ul>
             <a href="#"><li>Home</li></a>
             <a href="#"><li>Explore</li></a>
@@ -32,7 +32,7 @@
          </ul>
       </div>
       <div class="footer-inner" id="footer-inner-3">
-         <p>Legal</p>
+         <p style="font-weight: bold;">Legal</p>
          <ul>
             <a href="#"><li>Privacy Policy</li></a>
             <a href="#"><li>Terms of Services</li></a>
