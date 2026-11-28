@@ -27,23 +27,24 @@
 
 </head>
 
-<body class="bg-fish">
+<body>
    <?php require_once __DIR__ . "/../../components/navbar.php" ?>
    <div class="content">
       <?php require_once __DIR__ . "/../../components/sidebar.php" ?>
       <div class="mainContent">
       <ul>
-         <li><img src="" alt="Profil"></li>
+         <li class="profile"><img src="" alt="Profil"></li>
          <li><p></p></li>
          <li><p></p></li>
-         <li><button><i></i> Ganti foto profil</button></li>
+         <i class="fa-regular fa-camera"></i>
+         <li><input name="profile-picture" id="profile-picture" type="file" ></li>
       </ul>
 
-      <ul>
-         <a href=""><li></li></a>
-         <a href=""><li></li></a>
-         <a href=""><li></li></a>
-         <a href=""><li></li></a>
+      <ul class="footer-profile">
+         <a href="edit-profile.php"><li><button><i></i> Edit Profil</button></li></a>
+         <a href="#"><li><button><i></i> Kelola Postingan</button></li></a>
+         <a href="#"><li><button><i></i> Logout</button></li></a>
+         <a href="#"><li><button><i></i> Delete Account</button></li></a>
       </ul>
       </div>
    </div>
