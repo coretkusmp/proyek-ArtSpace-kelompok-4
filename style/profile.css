@@ -1,0 +1,110 @@
+@import url(color-variable.css);
+
+.mainContent{
+   width: 100vw;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.mainContent ul{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   list-style: none;
+   padding: 0;
+}
+
+.mainContent ul li.profile{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 10vw;
+   height: 10vw;
+   border-radius: 100vw;
+   border: 1px solid black;
+}
+
+.mainContent ul li button{
+   border: none;
+}
+
+.mainContent ul a{
+   text-decoration: none;
+}
+
+.mainContent ul.footer-profile{
+   gap: 1vw;
+}
+
+.mainContent ul.footer-profile li button{
+   cursor: pointer;;
+   border-radius: 1vw;
+   width: 62vw;
+   background-color: var(--newa);
+   color: white;
+   padding: 1vw;
+}
+
+.mainContent ul.footer-profile li button:hover{
+   background-color: var(--button-blue-hover);
+}
+
+.edit-profile{
+   width: 80vw;
+}
+
+.edit-profile li{
+   display: flex;
+   gap: 3vw;
+   justify-content: space-between;
+   width: 60vw;
+}
+
+.edit-profile li input{
+   width: 50vw;
+   height: 1.5vw;
+   border: 1px solid black;
+   background-color: white;
+}
+
+form{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+#profile-picture::file-selector-button{
+   background-color: rgba(0, 0, 0, 0);
+   border: none;
+   cursor: pointer;
+}
+
+i{
+   position: relative;
+   top: 1.5vw;
+   right: 9.5vw;
+      pointer-events: none;
+}
+
+#profile-picture{
+   border: 1px solid black;
+   padding:.5vw 3vw;
+   border-radius: 1vw;
+   color: white;
+   cursor: pointer;
+}
+
+#update-button{
+   border: none;
+   width: 20vw;
+   height: 2vw;
+   background-color: var(--button-blue);
+   color: white;
+}
+
+#update-button:hover{
+   background-color: var(--button-blue-hover);
+   font-weight: bold;
+}
+
